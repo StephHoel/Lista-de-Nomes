@@ -7,7 +7,11 @@
 :root {
   --card-title-border-color: #7d0794;
   --card-color-primary: #b117d0;
-  --card-bg-color: #1c012280;
+  --card-bg-color: #5f0c5f;
+  --bg-color: #290333;
+  --text-color: #dbacff;
+
+  --space-between-row: 10px;
 }
 
 ul {
@@ -16,16 +20,18 @@ ul {
   
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
 }
   
 #app {
   width: fit-content;
   margin: auto;
-  padding-top: 52px;
+  padding-top: 10px;
 }
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 50px;
 }
@@ -51,27 +57,18 @@ header {
   justify-content: center;
   align-items: center;
 
-  padding: 8px 16px;
-  border: 1px solid var(--card-title-border-color);
-  border-radius: 6px;
-
   width: fit-content;
   margin-inline: auto;
-  margin-bottom: 53px;
+  margin-bottom: 30px;
 
-  color: #f7dd43;
-}
-
-.card h2 span {
-  color: #e1e1e6;
-  font-size: 14px;
-  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: x-large;
 }
 
 .card ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--space-between-row);
 
   width: 270px;
 }
@@ -83,22 +80,12 @@ header {
 }
 
 .card ul li + li {
-  padding-top: 24px;
+  padding-top: var(--space-between-row);
   border-top: 1px solid #323238;
 }
 
-.card ul li strong {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 125%;
 
-  color: #E1E1E6;
-}
-
-
-.card h2, 
-.card ul li strong, 
-.card ul li img {
+.card h2 {
   transition: transform 0.3s
 }
 
