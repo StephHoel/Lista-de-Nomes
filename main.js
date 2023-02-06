@@ -2,7 +2,7 @@ const firstNames = ['Alberta (f)', 'Asriel (m)', 'Astrid (f)', 'Audrey (u)', 'Bi
 
 const hawaianNames = ['Anela (f)', 'Oliana (f)', 'Akoni (m)', 'Kai (m)', 'Kaleo (m)', 'Kalani (f)', 'Malia (f)', 'Nalu (f)']
 
-const lastNames = ['Beckham (English)', 'Haustrain', 'Jeha', 'Liers', 'MacCord', 'Monfrini', 'Nielsen (German)']
+const lastNames = ['Beckham (English)', 'Haustrain', 'Jeha', 'Liers', 'MacCord', 'Monfrini', 'Nielsen (German)', 'Tizue (Japan)', 'Oelke']
 
 let delay = -0.4;
 function createListNames(listNames, title) {
